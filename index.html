@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibe Coder — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress__bar"></div>
+  </div>
+
+  <div class="atmosphere">
+    <div class="atmosphere__mesh"></div>
+    <div class="atmosphere__grid"></div>
+    <div class="atmosphere__noise"></div>
+    <div class="atmosphere__orb atmosphere__orb--1"></div>
+    <div class="atmosphere__orb atmosphere__orb--2"></div>
+    <div class="atmosphere__orb atmosphere__orb--3"></div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">vibe<span>.coder</span></a>
+      <nav class="nav">
+        <a href="#about">Обо мне</a>
+        <a href="#skills">Услуги</a>
+        <a href="#projects">Проекты</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <a href="#contact" class="btn btn--sm btn--magnetic">Обсудить задачу</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero__layout">
+        <div class="hero__main">
+          <p class="eyebrow reveal">Vibe Coder / Portfolio / Web &amp; AI Experiences</p>
+          <h1 class="hero__title blur-text" data-blur-delay="200" data-blur-direction="top">
+            Я делаю сайты, интерфейсы и digital-проекты, которые выглядят как <span class="highlight-text">вайб</span>, а работают как система
+          </h1>
+          <p class="hero__subtitle hero__after-title">
+            Не просто «что-то сверстать», а собрать ощущение, стиль, логику и подачу
+            так, чтобы проект хотелось открыть, листать и запомнить.
+          </p>
+          <div class="hero__actions hero__after-title">
+            <a href="#projects" class="btn btn--primary btn--magnetic">
+              <span>Посмотреть проекты</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#contact" class="btn btn--outline btn--magnetic">Обсудить задачу</a>
+          </div>
+        </div>
+        <aside class="hero__visual reveal reveal--delay-4">
+          <figure class="hero__photo">
+            <span class="hero__photo-corner hero__photo-corner--tl" aria-hidden="true"></span>
+            <span class="hero__photo-corner hero__photo-corner--br" aria-hidden="true"></span>
+            <div class="hero__photo-glow" aria-hidden="true"></div>
+            <div class="hero__photo-frame">
+              <img
+                src="images/photo.jpg"
+                alt="Vibe Coder — портрет"
+                class="hero__photo-img"
+                width="340"
+                height="460"
+                loading="eager"
+              >
+              <div class="hero__photo-overlay" aria-hidden="true"></div>
+            </div>
+          </figure>
+          <div class="hero__metrics">
+            <div class="hero__metric">
+              <span class="hero__metric-val">∞</span>
+              <span class="hero__metric-key">вайб</span>
+            </div>
+            <div class="hero__metric">
+              <span class="hero__metric-val">01</span>
+              <span class="hero__metric-key">система</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <div class="hero__line" aria-hidden="true"></div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__header section__header--split reveal">
+          <div>
+            <span class="section__label">01 / Обо мне</span>
+            <h2 class="section__title">Я не просто пишу код — я собираю впечатление</h2>
+          </div>
+          <p class="section__aside">
+            Код + визуал + UX + AI — всё в одном ритме
+          </p>
+        </div>
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p>
+              Я работаю на стыке кода, визуала, UX и AI-инструментов.
+              Для меня сайт — это не набор блоков. Это ощущение от проекта,
+              ритм, подача, структура и то, как человек чувствует себя внутри интерфейса.
+            </p>
+            <p class="about__approach">
+              Мой подход — сделать быстро, красиво и не бездумно.
+              Чтобы проект не выглядел как очередной шаблон, собранный без вкуса и идеи.
+            </p>
+          </div>
+          <ul class="about__list reveal reveal--delay-1">
+            <li>лендинги</li>
+            <li>портфолио</li>
+            <li>промо-страницы</li>
+            <li>интерфейсы</li>
+            <li>спецпроекты</li>
+            <li>digital-концепты</li>
+            <li>AI-first сайты и продукты</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section--inset" id="skills">
+      <div class="container">
+        <div class="section__header section__header--center reveal">
+          <span class="section__label">02 / Что я умею</span>
+          <h2 class="section__title">Что я делаю</h2>
+        </div>
+        <div class="bento-grid">
+          <article class="card card--featured reveal">
+            <div class="card__icon">01</div>
+            <h3 class="card__title">Лендинги</h3>
+            <p class="card__text">Сайты, которые не просто «есть», а собирают внимание, держат ритм и ведут человека по смыслу.</p>
+          </article>
+          <article class="card reveal reveal--delay-1">
+            <div class="card__icon">02</div>
+            <h3 class="card__title">Портфолио и личные сайты</h3>
+            <p class="card__text">Страницы, которые показывают не только работы, но и стиль, характер и уровень.</p>
+          </article>
+          <article class="card reveal reveal--delay-2">
+            <div class="card__icon">03</div>
+            <h3 class="card__title">Визуальные концепты</h3>
+            <p class="card__text">Когда нужен не просто сайт, а ощущение: атмосфера, характер, настроение, подача.</p>
+          </article>
+          <article class="card reveal reveal--delay-1">
+            <div class="card__icon">04</div>
+            <h3 class="card__title">AI + Web</h3>
+            <p class="card__text">Использую нейросети как инструмент ускорения и усиления идей, а не как замену мышлению.</p>
+          </article>
+          <article class="card reveal reveal--delay-2">
+            <div class="card__icon">05</div>
+            <h3 class="card__title">UX и структура</h3>
+            <p class="card__text">Продумываю, как человек читает, куда смотрит, где теряется и где принимает решение.</p>
+          </article>
+          <article class="card card--accent reveal reveal--delay-3">
+            <div class="card__icon">06</div>
+            <h3 class="card__title">Быстрый запуск</h3>
+            <p class="card__text">Могу собрать сильную первую версию быстро, без месяцев бесконечных согласований.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Approach -->
+    <section class="section" id="approach">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">03 / Мой подход</span>
+          <h2 class="section__title">Как я работаю</h2>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <span class="step__num">01</span>
+            <div class="step__content">
+              <h3 class="step__title">Сначала вайб</h3>
+              <p>Я смотрю не только на задачу, но и на ощущение, которое должен передавать проект.</p>
+            </div>
+            <div class="step__line" aria-hidden="true"></div>
+          </div>
+          <div class="step reveal reveal--delay-1">
+            <span class="step__num">02</span>
+            <div class="step__content">
+              <h3 class="step__title">Потом структура</h3>
+              <p>Красивый сайт без логики — это просто красивая обёртка. Поэтому я собираю смысл, сценарий и путь пользователя.</p>
+            </div>
+            <div class="step__line" aria-hidden="true"></div>
+          </div>
+          <div class="step reveal reveal--delay-2">
+            <span class="step__num">03</span>
+            <div class="step__content">
+              <h3 class="step__title">Потом реализация</h3>
+              <p>Когда есть стиль и логика, проект собирается быстрее, точнее и выглядит сильно.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section--inset" id="projects">
+      <div class="container">
+        <div class="section__header section__header--center reveal">
+          <span class="section__label">04 / Портфолио</span>
+          <h2 class="section__title">Избранные проекты</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card project-card--large reveal">
+            <div class="project-card__visual project-card__visual--1">
+              <span class="project-card__tag">Лендинг</span>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">AI Landing Experience</h3>
+              <p class="project-card__desc">Лендинг для digital-продукта с акцентом на атмосферу, скорость восприятия и современный визуал.</p>
+              <p class="project-card__done"><strong>Что сделано:</strong> структура, тексты, дизайн-концепция, сборка.</p>
+            </div>
+          </article>
+          <article class="project-card reveal reveal--delay-1">
+            <div class="project-card__visual project-card__visual--2">
+              <span class="project-card__tag">Портфолио</span>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Portfolio for Creative Expert</h3>
+              <p class="project-card__desc">Личный сайт-портфолио, который показывает не только кейсы, но и стиль человека.</p>
+              <p class="project-card__done"><strong>Что сделано:</strong> позиционирование, подача, визуальный ритм, упаковка работ.</p>
+            </div>
+          </article>
+          <article class="project-card reveal reveal--delay-1">
+            <div class="project-card__visual project-card__visual--3">
+              <span class="project-card__tag">Воронка</span>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Bot &amp; Funnel Page</h3>
+              <p class="project-card__desc">Промо-страница под воронку и digital-продукт с акцентом на конверсию и лёгкость восприятия.</p>
+              <p class="project-card__done"><strong>Что сделано:</strong> логика блоков, тексты, CTA, визуальный каркас.</p>
+            </div>
+          </article>
+          <article class="project-card project-card--offset reveal reveal--delay-2">
+            <div class="project-card__visual project-card__visual--4">
+              <span class="project-card__tag">Концепт</span>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Concept Site for AI Creator</h3>
+              <p class="project-card__desc">Сайт с упором на трендовую подачу, сильный первый экран и ощущение «это хочется переслать».</p>
+              <p class="project-card__done"><strong>Что сделано:</strong> creative direction, структура, визуальная концепция.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section section--inset" id="reviews">
+      <div class="container">
+        <div class="section__header section__header--center reveal">
+          <span class="section__label">05 / Отзывы</span>
+          <h2 class="section__title">Что говорят после работы</h2>
+          <p class="reviews__lead">Не просто «сделали сайт», а собрали ощущение — вот как это звучит со стороны.</p>
+        </div>
+        <div class="reviews-grid">
+          <article class="review-card reveal">
+            <span class="review-card__mark" aria-hidden="true">"</span>
+            <p class="review-card__text">
+              Нужен был лендинг не «на отвали», а с характером. Получилось быстро, стильно
+              и без ощущения шаблона. Сайт выглядит дороже, чем я ожидал за такой срок.
+            </p>
+            <footer class="review-card__footer">
+              <div>
+                <p class="review-card__name">Анна К.</p>
+                <p class="review-card__role">эксперт, личный бренд</p>
+              </div>
+              <span class="review-card__tag">Лендинг</span>
+            </footer>
+          </article>
+          <article class="review-card reveal reveal--delay-1">
+            <span class="review-card__mark" aria-hidden="true">"</span>
+            <p class="review-card__text">
+              Собрали портфолио так, что видно не только работы, но и уровень.
+              Понравился подход: сначала вайб и подача, потом структура и реализация.
+            </p>
+            <footer class="review-card__footer">
+              <div>
+                <p class="review-card__name">Михаил Р.</p>
+                <p class="review-card__role">креативный продюсер</p>
+              </div>
+              <span class="review-card__tag">Портфолио</span>
+            </footer>
+          </article>
+          <article class="review-card reveal reveal--delay-2">
+            <span class="review-card__mark" aria-hidden="true">"</span>
+            <p class="review-card__text">
+              Для AI-продукта нужна была страница, которая сразу объясняет ценность.
+              Получился сильный первый экран, понятная логика блоков и живой визуал.
+            </p>
+            <footer class="review-card__footer">
+              <div>
+                <p class="review-card__name">Команда NovaTech</p>
+                <p class="review-card__role">digital-продукт</p>
+              </div>
+              <span class="review-card__tag">AI + Web</span>
+            </footer>
+          </article>
+          <article class="review-card review-card--featured reveal reveal--delay-3">
+            <span class="review-card__mark" aria-hidden="true">"</span>
+            <p class="review-card__text">
+              Работали без бесконечных созвонов и правок ради правок.
+              Быстро собрали первую версию, которая уже выглядела как финал — и её не стыдно показать клиентам.
+            </p>
+            <footer class="review-card__footer">
+              <div>
+                <p class="review-card__name">Studio Forma</p>
+                <p class="review-card__role">студия, промо-проекты</p>
+              </div>
+              <span class="review-card__tag">Быстрый запуск</span>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why me -->
+    <section class="section" id="why">
+      <div class="container">
+        <div class="why__layout">
+          <div class="section__header reveal">
+            <span class="section__label">06 / Почему я</span>
+            <h2 class="section__title">Почему ко мне идут не просто за кодом</h2>
+            <p class="why__lead">Потому что я умею видеть проект целиком.</p>
+          </div>
+          <div class="why__columns reveal reveal--delay-1">
+            <div class="why__col">
+              <p class="why__col-label">Не только:</p>
+              <ul>
+                <li>как это собрать</li>
+              </ul>
+            </div>
+            <div class="why__col why__col--accent">
+              <p class="why__col-label">но и:</p>
+              <ul>
+                <li>как это подать</li>
+                <li>как это будет восприниматься</li>
+                <li>где человек зацепится взглядом</li>
+                <li>что запомнит</li>
+                <li>почему это будет выглядеть дороже, чем стоит</li>
+              </ul>
+            </div>
+          </div>
+          <p class="why__formula reveal reveal--delay-2">
+            Я соединяю: <span>эстетику</span> + <span>структуру</span> + <span>digital-мышление</span> + <span>скорость</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stack -->
+    <section class="section section--inset" id="stack">
+      <div class="container">
+        <div class="section__header section__header--center reveal">
+          <span class="section__label">07 / Стек</span>
+          <h2 class="section__title">Инструменты</h2>
+        </div>
+        <div class="badges reveal">
+          <span class="badge">ChatGPT</span>
+          <span class="badge">Cursor</span>
+          <span class="badge">HTML / CSS / JS</span>
+          <span class="badge">React</span>
+          <span class="badge">Tailwind</span>
+          <span class="badge">Framer Motion</span>
+          <span class="badge">Figma</span>
+          <span class="badge">Tilda / Webflow / custom</span>
+          <span class="badge">Telegram / Bots / AI tools</span>
+        </div>
+        <p class="stack__note reveal reveal--delay-1">
+          Но если честно — главный инструмент не стек, а вкус, насмотренность
+          и умение собирать цельное впечатление.
+        </p>
+      </div>
+    </section>
+
+    <!-- Audience -->
+    <section class="section" id="audience">
+      <div class="container">
+        <div class="section__header section__header--center reveal">
+          <span class="section__label">08 / Для кого</span>
+          <h2 class="section__title">Кому подойдёт моя работа</h2>
+        </div>
+        <ul class="audience-list reveal">
+          <li>экспертам</li>
+          <li>креаторам</li>
+          <li>digital-проектам</li>
+          <li>AI-продуктам</li>
+          <li>студиям</li>
+          <li>тем, кому нужен сайт с характером</li>
+          <li>тем, кто не хочет шаблонную безликую страницу</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Manifesto -->
+    <section class="manifesto">
+      <div class="container">
+        <span class="manifesto__mark" aria-hidden="true">"</span>
+        <blockquote class="manifesto__quote reveal">
+          Хороший сайт — это не когда «нормально сверстано».
+          Это когда у проекта появляется <span class="highlight-text">энергия</span>,
+          форма и ощущение, что он живой.
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta" id="contact">
+      <div class="container">
+        <div class="cta__box reveal">
+          <span class="cta__corner cta__corner--tl" aria-hidden="true"></span>
+          <span class="cta__corner cta__corner--br" aria-hidden="true"></span>
+          <h2 class="cta__title">
+            Если тебе нужен сайт, который выглядит сильно и ощущается современно — давай соберём
+          </h2>
+          <p class="cta__text">
+            Могу помочь с концепцией, структурой, упаковкой и реализацией.
+            От первого вайба до готовой страницы.
+          </p>
+          <div class="cta__actions">
+            <a href="https://t.me/yourname" class="btn btn--primary btn--magnetic" target="_blank" rel="noopener">Написать мне</a>
+            <a href="#projects" class="btn btn--outline btn--magnetic">Посмотреть работы</a>
+          </div>
+        </div>
+
+        <div class="contacts reveal">
+          <h3 class="contacts__title">Контакты</h3>
+          <div class="contacts__grid">
+            <a href="https://t.me/yourname" class="contact-link" target="_blank" rel="noopener">
+              <span class="contact-link__label">Telegram</span>
+              <span class="contact-link__value">@yourname</span>
+            </a>
+            <a href="mailto:hello@yourmail.com" class="contact-link">
+              <span class="contact-link__label">Email</span>
+              <span class="contact-link__value">hello@yourmail.com</span>
+            </a>
+            <div class="contact-link contact-link--static">
+              <span class="contact-link__label">Соцсети</span>
+              <span class="contact-link__value">Behance / Dribbble / GitHub / Notion / Instagram</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© 2026 Vibe Coder. Собрано с вайбом.</p>
+      <a href="#hero" class="footer__top">Наверх ↑</a>
+    </div>
+  </footer>
+
+  <script src="blur-text.js"></script>
+  <script src="btn-animate.js"></script>
+  <script src="spotlight-card.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
